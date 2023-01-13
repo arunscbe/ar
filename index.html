@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CIGAR CONEXION</title>
+    <link rel="stylesheet" href="index.css" />
+    <link href="https://fonts.cdnfonts.com/css/bahnschrift" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <div id="homePage" class="cigar-word-break w-10/12 mx-auto">
+      <div class="flex h-screen justify-center items-center">
+        <div class="text-center">
+          <h1 class="text-5xl cigar-main-font">CIGAR CONEXION</h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="page-1" class="cigar-word-break w-10/12 mx-auto hidden">
+      <div class="flex h-screen justify-center items-center">
+        <div class="text-center flex flex-col gap-y-20">
+          <h1 class="text-5xl cigar-main-font">CIGAR CONEXION</h1>
+          <h2
+            class="cigar-font-1 text-2xl border-solid border-b-4 cigar-border pb-3.5"
+          >
+            To enter this site you must be 18 years old.
+          </h2>
+          <img
+            src="./assests/I am atlest 18 yr old.png"
+            alt="year old"
+            onclick="secondId()"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="page-2" class="h-screen cigar-word-break hidden">
+      <nav class="cigar-nav">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
+              <button
+                type="button"
+                class="inline-flex items-center justify-center rounded-md p-2"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Open main menu</span>
+                <img
+                  src="./assests/menu button.png"
+                  alt="Menu Button"
+                  class="block h-6 w-6"
+                />
+              </button>
+            </div>
+            <div
+              class="inset-y-0 right-0 flex items-center sm:items-stretch sm:justify-start"
+            >
+              <div
+                class="flex flex-shrink-0 items-center"
+                onclick="backToPage2()"
+              >
+                <img
+                  class="block h-8 w-auto lg:hidden"
+                  src="./assests/back button.png"
+                  alt="Back Button"
+                />
+                <img
+                  class="hidden h-8 w-auto lg:block"
+                  src="./assests/back button.png"
+                  alt="Back Button"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="cigar-rest flex-col flex justify-between items-center">
+        <div class="flex justify-center items-center w-10/12 mx-auto h-full">
+          <div class="text-center flex flex-col gap-y-14">
+            <div>
+              <h2 class="cigar-font-2 text-2xl">Welcome to</h2>
+              <h1 class="text-5xl cigar-main-font">CIGAR CONEXION</h1>
+            </div>
+            <div>
+              <img
+                src="./assests/start experiencing.png"
+                alt="Start Experience"
+                class="items-center mx-auto w-52"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="flex text-center flex-col cigar-bottom-section">
+          <hr class="cigar-hr" />
+          <div class="flex flex-col w-10/12 mx-auto">
+            <img
+              src="./assests/experience your cigar.png"
+              alt="Experience your Cigar"
+              onclick="thirdId()"
+            /><img
+              src="./assests/pair your cigar.png"
+              alt="Pair your Cigar"
+              onclick="fourthId()"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page-3" class="h-screen cigar-word-break hidden">
+      <nav class="cigar-nav">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
+              <button
+                type="button"
+                class="inline-flex items-center justify-center rounded-md p-2"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Open main menu</span>
+                <img
+                  src="./assests/menu button.png"
+                  alt="Menu Button"
+                  class="block h-6 w-6"
+                />
+              </button>
+            </div>
+            <div
+              class="inset-y-0 right-0 flex items-center sm:items-stretch sm:justify-start"
+            >
+              <div
+                class="flex flex-shrink-0 items-center"
+                onclick="backToPage3()"
+              >
+                <img
+                  class="block h-8 w-auto lg:hidden"
+                  src="./assests/back button.png"
+                  alt="Back Button"
+                />
+                <img
+                  class="hidden h-8 w-auto lg:block"
+                  src="./assests/back button.png"
+                  alt="Back Button"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="cigar-rest flex-col flex justify-between items-center">
+        <div class="flex justify-center items-center w-10/12 mx-auto h-full">
+          <div class="text-center">
+            <h1 class="text-5xl cigar-font-2">Expreience your Cigar</h1>
+          </div>
+        </div>
+        <div class="flex text-center flex-col cigar-bottom-section">
+          <hr class="cigar-hr" />
+          <div class="flex flex-col w-10/12 mx-auto">
+            <img
+              src="./assests/cut your cigar.png"
+              alt="Cut your Cigar"
+              onclick="fifthId()"
+            />
+            <img
+              src="./assests/light your cigar.png"
+              alt="Light your Cigar"
+              onclick="fifthId()"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page-4" class="h-screen cigar-word-break hidden">
+      <nav class="cigar-nav">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
+              <button
+                type="button"
+                class="inline-flex items-center justify-center rounded-md p-2"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Open main menu</span>
+                <img
+                  src="./assests/menu button.png"
+                  alt="Menu Button"
+                  class="block h-6 w-6"
+                />
+              </button>
+            </div>
+            <div
+              class="inset-y-0 right-0 flex items-center sm:items-stretch sm:justify-start"
+            >
+              <div
+                class="flex flex-shrink-0 items-center"
+                onclick="backToPage3()"
+              >
+                <img
+                  class="block h-8 w-auto lg:hidden"
+                  src="./assests/back button.png"
+                  alt="Back Button"
+                />
+                <img
+                  class="hidden h-8 w-auto lg:block"
+                  src="./assests/back button.png"
+                  alt="Back Button"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="cigar-rest flex-col flex justify-between items-center">
+        <div class="flex justify-center items-center w-10/12 mx-auto h-full">
+          <div class="text-center">
+            <h1 class="text-5xl cigar-font-2">Pair your Cigar</h1>
+          </div>
+        </div>
+        <div class="flex text-center flex-col cigar-bottom-section">
+          <hr class="cigar-hr" />
+          <div class="flex flex-col w-10/12 mx-auto">
+            <img
+              src="./assests/pair with food.png"
+              alt="Pair with food"
+              onclick="fifthId()"
+            />
+            <img
+              src="./assests/pair with beverages.png"
+              alt="Pair with beverages"
+              onclick="fifthId()"
+            />
+            <img
+              src="./assests/pair with alcohol.png"
+              alt="Pair with alcohol"
+              onclick="fifthId()"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page-5" class="h-screen cigar-word-break hidden">
+      <nav class="cigar-nav">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
+              <button
+                type="button"
+                class="inline-flex items-center justify-center rounded-md p-2"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Open main menu</span>
+                <img
+                  src="./assests/menu button.png"
+                  alt="Menu Button"
+                  class="block h-6 w-6"
+                />
+              </button>
+            </div>
+            <div
+              class="inset-y-0 right-0 flex items-center sm:items-stretch sm:justify-start"
+            >
+              <div
+                class="flex flex-shrink-0 items-center"
+                onclick="backToPage5()"
+              >
+                <img
+                  class="block h-8 w-auto lg:hidden"
+                  src="./assests/back button.png"
+                  alt="Back Button"
+                />
+                <img
+                  class="hidden h-8 w-auto lg:block"
+                  src="./assests/back button.png"
+                  alt="Back Button"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="cigar-rest flex-col flex justify-between items-center">
+        <div class="flex justify-center items-center w-10/12 mx-auto h-full">
+          <div class="text-center">
+            <h1 class="text-3xl cigar-font-3">
+              Please allow access to camera, motion & orientation
+            </h1>
+          </div>
+        </div>
+
+        <img src="./assests/ground mark.png" alt="Ground Mark" class="w-full" />
+      </div>
+    </div>
+  </body>
+</html>

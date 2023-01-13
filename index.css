@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+  background-color: #413432;
+}
+.cigar-main-font {
+  color: #b68661;
+  font-family: "Yeseva One";
+}
+.cigar-font-1 {
+  color: #fff;
+  font-family: "Bahnschrift", sans-serif;
+}
+.cigar-font-2 {
+  color: #fff;
+  font-family: "Bahnschrift", sans-serif;
+  line-height: 4rem !important;
+}
+.cigar-font-3 {
+  color: #7a3c35;
+  font-family: "Bahnschrift", sans-serif;
+}
+.cigar-hr {
+  border: 6px solid #b68661;
+  border-radius: 10px;
+  width: 15%;
+  text-align: center;
+  margin: 20px auto;
+}
+.cigar-bottom-section {
+  background-color: #7a3c35;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+.cigar-word-break {
+  word-break: break-word;
+}
+.cigar-nav {
+  height: 10%;
+}
+.cigar-rest {
+  height: 90%;
+}
+.cigar-border {
+  border-color: #7a3c35;
+}
