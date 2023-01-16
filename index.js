@@ -71,12 +71,15 @@ function changeModel(name){
     modelViewer.src = base + '.gltf';
  
 }
-function playAnimation(){
-  if (Cigar.paused) {
-      Cigar.play();
-      document.getElementById('hotspotButton').innerHTML = 'STOP'
-  } else {
-      Cigar.pause();
-      document.getElementById('hotspotButton').innerHTML = 'PLAY'
-  }
-}
+modelViewer.shadowRoot.querySelector('#default-exit-webxr-ar-button').addEventListener("click", function(){
+  alert('hellooo....');
+});
+// function playAnimation(){
+//   if (Cigar.paused) {
+//       Cigar.play();
+//       document.getElementById('hotspotButton').innerHTML = 'STOP'
+//   } else {
+//       Cigar.pause();
+//       document.getElementById('hotspotButton').innerHTML = 'PLAY'
+//   }
+// }
