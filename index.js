@@ -1,3 +1,11 @@
+const models = [
+   {"model":"./models/ANIMATION1.gltf","animation":"Animation_Astray_mat"},
+   {"model":"","animation":""},
+   {"model":"","animation":""},
+   {"model":"","animation":""},
+   {"model":"","animation":""}
+]
+
 const timeout = setTimeout(function () {
   window.location.href = "index.html#page-1";
 
@@ -17,6 +25,7 @@ function thirdId() {
   window.location.href = "index.html#page-3";
   document.getElementById("page-3").classList.remove("hidden");
   document.getElementById("page-2").classList.add("hidden");
+ 
 }
 function fourthId() {
   window.location.href = "index.html#page-4";
@@ -30,6 +39,8 @@ function fifthId() {
   document.getElementById("page-5").classList.remove("hidden");
   document.getElementById("page-4").classList.add("hidden");
   document.getElementById("page-3").classList.add("hidden");
+  changeModel("ANIMATION1");
+ 
 }
 function backToPage2() {
   window.location.href = "index.html#page-1";
@@ -51,4 +62,21 @@ function backToPage5() {
   window.location.href = "index.html#page-2";
   document.getElementById("page-2").classList.remove("hidden");
   document.getElementById("page-5").classList.add("hidden");
+}
+
+function changeModel(name){
+    const modelViewer = document.querySelector("model-viewer");
+
+    const base = "./models/" + name;
+    modelViewer.src = base + '.gltf';
+ 
+}
+function playAnimation(){
+  if (Cigar.paused) {
+      Cigar.play();
+      document.getElementById('hotspotButton').innerHTML = 'STOP'
+  } else {
+      Cigar.pause();
+      document.getElementById('hotspotButton').innerHTML = 'PLAY'
+  }
 }
