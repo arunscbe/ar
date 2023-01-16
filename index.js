@@ -75,6 +75,7 @@ function exit(){
 const _exit = document.querySelector("model-viewer");
 _exit.shadowRoot.querySelector('.exit-webxr-ar-button').addEventListener('click',function(){
   alert("sdssd....");
+    backToPage5();
 })
 }
 // function playAnimation(){
