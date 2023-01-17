@@ -73,7 +73,7 @@ function changeModel(name){
 }
 function exit(){
 const _exit = document.querySelector("model-viewer");
-_exit.shadowRoot.querySelector('#default-exit-webxr-ar-button').addEventListener('click',function(){
+_exit.shadowRoot.querySelector('.exit-webxr-ar-button').addEventListener('click',function(){
   alert('hello....');
     backToPage5();
 })
