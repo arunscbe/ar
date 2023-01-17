@@ -43,10 +43,10 @@ body {
   word-break: break-word;
 }
 .cigar-nav {
-  height: 10%;
+  height: 20%;
 }
 .cigar-rest {
-  height: 90%;
+  height: 80%;
 }
 .cigar-border {
   border-color: #7a3c35;
