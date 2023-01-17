@@ -43,7 +43,8 @@ body {
   word-break: break-word;
 }
 .cigar-nav {
-  height: 20%;
+  margin-top: 10%;
+  height: 10%;
 }
 .cigar-rest {
   height: 80%;
