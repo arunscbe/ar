@@ -88,7 +88,6 @@ function exit() {
   _exit.shadowRoot
     .querySelector(".exit-webxr-ar-button")
     .addEventListener("click", function () {
-      alert("hello....");
       backToPage5();
     });
 }
