@@ -292,18 +292,17 @@
         slot="hotspot-one" onclick="playAnimation()"
         data-position="..." data-normal="...">PLAY</button> -->
 
-        <model-viewer
-          style="width: 100%; height: 100%; top: 0px"
-          id="Cigar"
-          loading="eager"
-          camera-controls
-          alt="Cigar"
-          shadow-intensity="1"
-          ar
-          ar-scale="${.01} ${.01} ${.01}"
-          autoplay
-          ar
-          ar-modes="scene-viewer quick-look webxr"
+        <model-viewer style="width: 100%; height: 100%; top: 0px;" 
+        id="Cigar"
+        loading="eager" 
+        camera-controls
+        alt="Cigar" 
+           
+        shadow-intensity="1"         
+           
+        ar ar-scale='${.001} ${.001} ${.001}'         
+        autoplay ar ar-modes="webxr scene-viewer "
+       
         >
           <button
             slot="ar-button"
