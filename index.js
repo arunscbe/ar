@@ -51,7 +51,7 @@ function fifthId() {
   document.getElementById("page-4").style.display = "none";
   document.getElementById("page-3").style.display = "none";
 
-  changeModel("ANIMATION1");
+  changeModel("glass_bottle");
 }
 function backToPage2() {
   window.location.href = "index.html#page-1";
@@ -81,7 +81,7 @@ function changeModel(name) {
   const modelViewer = document.querySelector("model-viewer");
 
   const base = "./models/" + name;
-  modelViewer.src = base + ".gltf";
+  modelViewer.src = base + ".glb";
 }
 function exit() {
   const _exit = document.querySelector("model-viewer");
