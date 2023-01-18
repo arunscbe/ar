@@ -42,13 +42,11 @@ body {
 .cigar-word-break {
   word-break: break-word;
 }
-.cigar-nav {
-  margin-top: 10%;
-  height: 10%;
-}
-.cigar-rest {
-  height: 85%;
-}
 .cigar-border {
   border-color: #7a3c35;
+}
+.cigar-top{
+  flex-direction: column;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }

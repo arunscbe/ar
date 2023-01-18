@@ -7,21 +7,23 @@
     <link rel="stylesheet" href="index.css" />
     <link href="https://fonts.cdnfonts.com/css/bahnschrift" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="index.js"></script>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
   </head>
 
-  <body onload='exit()'>
-    <div id="homePage" class="cigar-word-break w-10/12 mx-auto">
-      <div class="flex h-screen justify-center items-center">
+  <body onload="exit()">
+    <div id="homePage" class="cigar-word-break w-10/12 mx-auto cigar-top flex">
+      <div class="flex grow justify-center items-center">
         <div class="text-center">
           <h1 class="text-5xl cigar-main-font">CIGAR CONEXION</h1>
         </div>
       </div>
     </div>
 
-    <div id="page-1" class="cigar-word-break w-10/12 mx-auto hidden">
-      <div class="flex h-screen justify-center items-center">
+    <div id="page-1" class="cigar-word-break w-10/12 mx-auto cigar-top">
+      <div class="grow justify-center items-center flex">
         <div class="text-center flex flex-col gap-y-20">
           <h1 class="text-5xl cigar-main-font">CIGAR CONEXION</h1>
           <h2
@@ -38,8 +40,8 @@
       </div>
     </div>
 
-    <div id="page-2" class=" h-screen cigar-word-break hidden">
-      <nav class="cigar-nav">
+    <div id="page-2" class="cigar-word-break cigar-top">
+      <nav>
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div class="relative flex h-16 items-center justify-between">
             <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
@@ -79,7 +81,7 @@
           </div>
         </div>
       </nav>
-      <div class="cigar-rest flex-col flex justify-between items-center ">
+      <div class="flex-col flex justify-between items-center grow">
         <div class="flex justify-center items-center w-10/12 mx-auto h-full">
           <div class="text-center flex flex-col gap-y-7">
             <div>
@@ -111,8 +113,8 @@
         </div>
       </div>
     </div>
-    <div id="page-3" class="h-screen cigar-word-break hidden">
-      <nav class="cigar-nav">
+    <div id="page-3" class="cigar-word-break cigar-top">
+      <nav>
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div class="relative flex h-16 items-center justify-between">
             <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
@@ -152,7 +154,7 @@
           </div>
         </div>
       </nav>
-      <div class="cigar-rest flex-col flex justify-between items-center">
+      <div class="flex-col flex justify-between items-center grow">
         <div class="flex justify-center items-center w-10/12 mx-auto h-full">
           <div class="text-center">
             <h1 class="text-5xl cigar-font-2">Expreience your Cigar</h1>
@@ -175,8 +177,8 @@
         </div>
       </div>
     </div>
-    <div id="page-4" class="h-screen cigar-word-break hidden">
-      <nav class="cigar-nav">
+    <div id="page-4" class="cigar-word-break cigar-top">
+      <nav>
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div class="relative flex h-16 items-center justify-between">
             <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
@@ -216,7 +218,7 @@
           </div>
         </div>
       </nav>
-      <div class="cigar-rest flex-col flex justify-between items-center">
+      <div class="flex-col flex justify-between items-center grow">
         <div class="flex justify-center items-center w-10/12 mx-auto h-full">
           <div class="text-center">
             <h1 class="text-5xl cigar-font-2">Pair your Cigar</h1>
@@ -244,8 +246,8 @@
         </div>
       </div>
     </div>
-    <div id="page-5" class="h-screen cigar-word-break hidden">
-      <nav class="cigar-nav">
+    <div id="page-5" class="cigar-word-break cigar-top">
+      <nav>
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div class="relative flex h-16 items-center justify-between">
             <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
@@ -285,28 +287,41 @@
           </div>
         </div>
       </nav>
-      <div class="cigar-rest flex-col flex justify-between items-center">
-<!--         <button id="hotspotButton" class="bg-red-500 hover:bg-red-400 text-white font-bold py-2 px-12 border-b-4 border-red-700 hover:border-red-500 rounded"
+      <div class="flex-col flex justify-between items-center grow">
+        <!--         <button id="hotspotButton" class="bg-red-500 hover:bg-red-400 text-white font-bold py-2 px-12 border-b-4 border-red-700 hover:border-red-500 rounded"
         slot="hotspot-one" onclick="playAnimation()"
         data-position="..." data-normal="...">PLAY</button> -->
 
-        <model-viewer style="width: 100%; height: 100%; top: 0px;" 
-        id="Cigar"
-        loading="eager" 
-        camera-controls
-        alt="Cigar" 
-           
-        shadow-intensity="1"         
-           
-        ar ar-scale='${.01} ${.01} ${.01}'         
-        autoplay ar ar-modes="scene-viewer quick-look webxr"
-       
+        <model-viewer
+          style="width: 100%; height: 100%; top: 0px"
+          id="Cigar"
+          loading="eager"
+          camera-controls
+          alt="Cigar"
+          shadow-intensity="1"
+          ar
+          ar-scale="${.01} ${.01} ${.01}"
+          autoplay
+          ar
+          ar-modes="scene-viewer quick-look webxr"
         >
-         <button slot="ar-button" style="padding-left : 10px;padding-right:10px;background-color: white; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; ">
-          View in AR
-      </button>
-    </model-viewer>
-    
+          <button
+            slot="ar-button"
+            style="
+              padding-left: 10px;
+              padding-right: 10px;
+              background-color: white;
+              border-radius: 4px;
+              border: none;
+              position: absolute;
+              top: 16px;
+              right: 16px;
+            "
+          >
+            View in AR
+          </button>
+        </model-viewer>
+
         <!-- <div class="flex justify-center items-center w-10/12 mx-auto h-full">
           <div class="text-center">
             <h1 class="text-3xl cigar-font-3">
@@ -318,6 +333,7 @@
         <img src="./assests/ground mark.png" alt="Ground Mark" class="w-full" /> -->
       </div>
     </div>
-    
   </body>
+  <script src="index.js"></script>
+
 </html>
