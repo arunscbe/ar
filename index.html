@@ -166,12 +166,14 @@
             <img
               src="./assests/cut your cigar.png"
               alt="Cut your Cigar"
-              onclick="fifthId()"
+              id="ANIMATION_01"
+              onclick="fifthId(this.id)"
             />
             <img
               src="./assests/light your cigar.png"
               alt="Light your Cigar"
-              onclick="fifthId()"
+              id="ANIMATION_02"
+              onclick="fifthId(this.id)"
             />
           </div>
         </div>
@@ -230,17 +232,20 @@
             <img
               src="./assests/pair with food.png"
               alt="Pair with food"
-              onclick="fifthId()"
+              id="Pair_01"
+              onclick="fifthId(this.id)"            
             />
             <img
               src="./assests/pair with beverages.png"
               alt="Pair with beverages"
-              onclick="fifthId()"
+              id="Pair_02"
+              onclick="fifthId(this.id)"
             />
             <img
               src="./assests/pair with alcohol.png"
               alt="Pair with alcohol"
-              onclick="fifthId()"
+              id="Pair_03"
+              onclick="fifthId(this.id)"
             />
           </div>
         </div>
@@ -296,13 +301,9 @@
         id="Cigar"
         loading="eager" 
         camera-controls
-        alt="Cigar" 
-           
-        shadow-intensity="1"         
-           
-               
-        autoplay ar ar-modes="webxr scene-viewer "
-       
+        alt="Cigar"            
+        shadow-intensity="1"                
+        autoplay ar ar-modes="webxr scene-viewer "       
         >
           <button
             slot="ar-button"
