@@ -77,6 +77,7 @@ function backToPage5() {
 }
 
 function changeModel(name) {
+  alert('ONE');
   const modelViewer = document.querySelector("model-viewer");
 
   const base = "./models/" + name;
