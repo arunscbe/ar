@@ -80,7 +80,7 @@ function changeModel(name) {
   const modelViewer = document.querySelector("model-viewer");
 
   const base = "./models/" + name;
-  modelViewer.src = base + ".glb";
+  modelViewer.src = base + ".glft";
 }
 function exit() {
   const _exit = document.querySelector("model-viewer");
