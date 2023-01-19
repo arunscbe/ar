@@ -45,13 +45,12 @@ function fourthId() {
   document.getElementById("page-5").style.display = "none";
 
 }
-function fifthId() {
+function fifthId(id) {
   window.location.href = "index.html#page-5";
   document.getElementById("page-5").style.display = "flex";
   document.getElementById("page-4").style.display = "none";
   document.getElementById("page-3").style.display = "none";
-
-  changeModel("glass_bottle");
+  changeModel(id);
 }
 function backToPage2() {
   window.location.href = "index.html#page-1";
