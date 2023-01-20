@@ -50,7 +50,7 @@ function fifthId(id) {
   document.getElementById("page-5").style.display = "flex";
   document.getElementById("page-4").style.display = "none";
   document.getElementById("page-3").style.display = "none";
-  changeModel(id);
+//   changeModel(id);
 }
 function backToPage2() {
   window.location.href = "index.html#page-1";
