@@ -78,7 +78,7 @@ function backToPage5() {
 
 function changeModel(name) {
   const modelViewer = document.querySelector("model-viewer");
-alert('1111');
+alert('8888');
   const base = "./models/" + name;
   modelViewer.src = base + ".gltf";
    modelViewer.iosSrc === base + ".usdz";
