@@ -81,7 +81,7 @@ function changeModel(name) {
 alert('1111');
   const base = "./models/" + name;
   modelViewer.src = base + ".gltf";
-   modelViewer.iosSrc = base + ".usdz";
+   modelViewer.iosSrc === base + ".usdz";
 }
 function exit() {
   const _exit = document.querySelector("model-viewer");
