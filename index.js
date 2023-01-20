@@ -79,6 +79,7 @@ function backToPage5() {
 function changeModel(name) {
   const modelViewer = document.querySelector("model-viewer");
 alert('00');
+  modelViewer.ar-modes="webxr scene-viewer";
   const base = "./models/" + name;
   modelViewer.src = base + ".gltf";
    modelViewer.iosSrc === base + ".usdz";
