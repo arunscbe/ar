@@ -78,11 +78,11 @@ function backToPage5() {
 
 function changeModel(name) {
   const modelViewer = document.querySelector("model-viewer");
-alert('00');
-  modelViewer.ar-modes="webxr scene-viewer";
+alert('0222');
   const base = "./models/" + name;
+  modelViewer.iosSrc === base + ".usdz";
   modelViewer.src = base + ".gltf";
-   modelViewer.iosSrc === base + ".usdz";
+   
 }
 function exit() {
   const _exit = document.querySelector("model-viewer");
