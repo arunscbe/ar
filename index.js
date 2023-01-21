@@ -104,7 +104,7 @@ function changeModel(name) {
   const modelViewer = document.getElementById("Cigar");
 
   const base = "./models/" + name;
- // modelViewer.iosSrc === base + ".usdz";
+  modelViewer.iosSrc === base + ".usdz";
   modelViewer.src = base + ".gltf";
 }
 function exit() {
