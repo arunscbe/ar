@@ -101,14 +101,14 @@ function backToPage5() {
 }
 
 function changeModel(name) {
-  const modelViewer = document.querySelector("model-viewer");
+  const modelViewer = document.getElementById("Cigar");
 
   const base = "./models/" + name;
-  modelViewer.iosSrc === base + ".usdz";
+ // modelViewer.iosSrc === base + ".usdz";
   modelViewer.src = base + ".gltf";
 }
 function exit() {
-  const _exit = document.querySelector("model-viewer");
+  const _exit = document.getElementById("Cigar");
   _exit.shadowRoot
     .querySelector(".exit-webxr-ar-button")
     .addEventListener("click", function () {
