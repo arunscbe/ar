@@ -15,7 +15,7 @@ const timeout = setTimeout(function () {
   window.location.href = "index.html#page-1";
   document.getElementById("homePage").style.display = "none";
   document.getElementById("page-1").style.display = "flex";
-  document.getElementById("audio-1").play();
+//   document.getElementById("audio-1").play();
   window.clearTimeout(timeout);
 }, 2000);
 
@@ -54,7 +54,7 @@ function backToPage2() {
   window.location.href = "index.html#page-1";
   document.getElementById("page-1").style.display = "flex";
   document.getElementById("page-2").style.display = "none";
-  document.getElementById("audio-1").pause();
+//   document.getElementById("audio-1").pause();
   document.getElementById("audio-2").pause();
   document.getElementById("cut-audio").pause();
   document.getElementById("roast-audio").pause();
@@ -73,7 +73,7 @@ function backToPage3() {
   document.getElementById("page-2").style.display = "flex";
   document.getElementById("page-3").style.display = "none";
   document.getElementById("page-4").style.display = "none";
-  document.getElementById("audio-1").pause();
+//   document.getElementById("audio-1").pause();
   document.getElementById("audio-2").pause();
   document.getElementById("cut-audio").pause();
   document.getElementById("roast-audio").pause();
@@ -85,7 +85,7 @@ function backToPage5() {
   window.location.href = "index.html#page-2";
   document.getElementById("page-2").style.display = "flex";
   document.getElementById("page-5").style.display = "none";
-  document.getElementById("audio-1").pause();
+//   document.getElementById("audio-1").pause();
   document.getElementById("audio-2").pause();
   document.getElementById("cut-audio").pause();
   document.getElementById("roast-audio").pause();
