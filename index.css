@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+@font-face {
+  font-family: "CustomFont";
+  src: url("./assests/MyriadProBold/Myriad\ Pro\ Bold.ttf");
+}
 * {
   margin: 0;
   padding: 0;
@@ -12,20 +16,20 @@ body {
 }
 .cigar-main-font {
   color: #b68661;
-  font-family: "Yeseva One";
+  font-family: "CustomFont";
 }
 .cigar-font-1 {
   color: #fff;
-  font-family: "Bahnschrift", sans-serif;
+  font-family: "CustomFont";
 }
 .cigar-font-2 {
   color: #fff;
-  font-family: "Bahnschrift", sans-serif;
+  font-family: "CustomFont";
   line-height: 4rem !important;
 }
 .cigar-font-3 {
   color: #7a3c35;
-  font-family: "Bahnschrift", sans-serif;
+  font-family: "CustomFont";
 }
 .cigar-hr {
   border: 6px solid #b68661;
@@ -45,7 +49,7 @@ body {
 .cigar-border {
   border-color: #7a3c35;
 }
-.cigar-top{
+.cigar-top {
   flex-direction: column;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
