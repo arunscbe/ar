@@ -1,10 +1,4 @@
-const models = [
-  { model: "./models/ANIMATION1.gltf", animation: "Animation_Astray_mat" },
-  { model: "", animation: "" },
-  { model: "", animation: "" },
-  { model: "", animation: "" },
-  { model: "", animation: "" },
-];
+
 
 // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
 let vh = window.innerHeight * 0.01;
