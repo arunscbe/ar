@@ -95,13 +95,13 @@ function backToPage5() {
 }
 
 function changeModel(name) {
-  alert("FOUR");
+  alert("five");
   const modelViewer = document.getElementById("Cigar");
 
   const base = "./models/" + name;
    modelViewer.src = base + ".gltf";  
    modelViewer.setAttribute("ios-src", base + ".usdz");
-   modelViewer.setAttribute("autoplay", true);
+  // modelViewer.setAttribute("autoplay", true);
   //modelViewer.iosSrc === base + ".usdz";
  
 
