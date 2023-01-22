@@ -95,13 +95,16 @@ function backToPage5() {
 }
 
 function changeModel(name) {
-  alert("THREE");
+  alert("FOUR");
   const modelViewer = document.getElementById("Cigar");
 
   const base = "./models/" + name;
-  modelViewer.iosSrc === base + ".usdz";
-  modelViewer.src = base + ".gltf";
-  modelViewer.autoplay;
+   modelViewer.src = base + ".gltf";  
+   modelViewer.setAttribute("ios-src", base + ".usdz");
+   modelViewer.setAttribute("autoplay", true);
+  //modelViewer.iosSrc === base + ".usdz";
+ 
+
 }
 function exit() {
   const _exit = document.getElementById("Cigar");
