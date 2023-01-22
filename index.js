@@ -101,6 +101,7 @@ function changeModel(name) {
   const base = "./models/" + name;
   modelViewer.iosSrc === base + ".usdz";
   modelViewer.src = base + ".gltf";
+  modelViewer.autoplay;
 }
 function exit() {
   const _exit = document.getElementById("Cigar");
