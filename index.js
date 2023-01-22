@@ -95,7 +95,7 @@ function backToPage5() {
 }
 
 function changeModel(name) {
-  alert("five");
+  alert("Six");
   const modelViewer = document.getElementById("Cigar");
 
   const base = "./models/" + name;
