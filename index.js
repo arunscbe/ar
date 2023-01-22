@@ -103,8 +103,6 @@ function changeModel(name) {
 //    modelViewer.setAttribute("ios-src", base + ".usdz");
 //    modelViewer.setAttribute("autoplay", true);
     modelViewer.iosSrc === base + ".usdz";
- modelViewer.timeScale = 0;
- modelViewer.play();
  console.log(modelViewer);
 
 }
