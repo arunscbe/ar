@@ -1,4 +1,4 @@
- alert("11");
+ alert("12");
 
 // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
 let vh = window.innerHeight * 0.01;
@@ -99,9 +99,9 @@ function changeModel(name) {
   const modelViewer = document.getElementById("Cigar");
 
   const base = "./models/" + name;
-   modelViewer.src = base + ".gltf";  
+  // modelViewer.src = base + ".gltf";  
 //    modelViewer.setAttribute("ios-src", base + ".usdz");
-    modelViewer.setAttribute("autoplay", true);
+   // modelViewer.setAttribute("autoplay", true);
     modelViewer.iosSrc === base + ".usdz";
  console.log(modelViewer);
 
