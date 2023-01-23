@@ -1,4 +1,18 @@
- alert("12");
+ let content = {
+ "cut": {"name" : "Use a straight, two-finger guillotine cutter with curved blades"},
+ "roast":{"name" : "Position them so that they are just on the brink of touching each other"},
+ "light":{"name" : "Cigar needs to be rotated under the Lighter’s Flame for all its parts to get heated evenly"},
+ "alcohol":{"name" : "A single Malt Especially a Highland single malt is the best partner for this cigar"},
+ "beverage" : {"name" : "If coffee is your beverage of choice, espresso would be the ideal pairing"}
+}
+let forAudioID;
+
+  let audioTwo = document.getElementById("audio-2");
+  let cutAudio = document.getElementById("cut-audio");
+  let roastAudio= document.getElementById("roast-audio");
+  let lightAudio =  document.getElementById("light-audio");
+  let alcoholAudio = document.getElementById("alcohol-audio");
+  let beverageAudio =  document.getElementById("beverage-audio");
 
 // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
 let vh = window.innerHeight * 0.01;
@@ -38,29 +52,22 @@ function fourthId() {
   document.getElementById("page-5").style.display = "none";
 }
 function fifthId(id) {
+  forAudioID = id;
   window.location.href = "index.html#page-5";
-  if (id == "cut") document.getElementById("cut-audio").play();
-  if (id == "roast") document.getElementById("roast-audio").play();
-  if (id == "light") document.getElementById("light-audio").play();
-  if (id == "alcohol") document.getElementById("alcohol-audio").play();
-  if (id == "beverage") document.getElementById("beverage-audio").play();
   document.getElementById("page-5").style.display = "flex";
   document.getElementById("page-4").style.display = "none";
   document.getElementById("page-3").style.display = "none";
-
+  document.getElementById('popUpContainer').style.display = 'block';
+  let _C = document.getElementById("contentDisplay");
+  _C.innerText = content[id].name; 
   changeModel(id);
 }
 function backToPage2() {
   window.location.href = "index.html#page-1";
   document.getElementById("page-1").style.display = "flex";
   document.getElementById("page-2").style.display = "none";
-//   document.getElementById("audio-1").pause();
-  document.getElementById("audio-2").pause();
-  document.getElementById("cut-audio").pause();
-  document.getElementById("roast-audio").pause();
-  document.getElementById("light-audio").pause();
-  document.getElementById("alcohol-audio").pause();
-  document.getElementById("beverage-audio").pause();
+ document.getElementById("audio-1").pause();
+  audioPause();
 }
 // function backToPage4() {
 //   window.location.href = "index.html#page-2";
@@ -73,25 +80,14 @@ function backToPage3() {
   document.getElementById("page-2").style.display = "flex";
   document.getElementById("page-3").style.display = "none";
   document.getElementById("page-4").style.display = "none";
-//   document.getElementById("audio-1").pause();
-  document.getElementById("audio-2").pause();
-  document.getElementById("cut-audio").pause();
-  document.getElementById("roast-audio").pause();
-  document.getElementById("light-audio").pause();
-  document.getElementById("alcohol-audio").pause();
-  document.getElementById("beverage-audio").pause();
+  document.getElementById("audio-1").pause();
+  audioPause();
 }
 function backToPage5() {
   window.location.href = "index.html#page-2";
   document.getElementById("page-2").style.display = "flex";
   document.getElementById("page-5").style.display = "none";
-//   document.getElementById("audio-1").pause();
-  document.getElementById("audio-2").pause();
-  document.getElementById("cut-audio").pause();
-  document.getElementById("roast-audio").pause();
-  document.getElementById("light-audio").pause();
-  document.getElementById("alcohol-audio").pause();
-  document.getElementById("beverage-audio").pause();
+audioPause();
 }
 
 function changeModel(name) {
@@ -101,9 +97,9 @@ function changeModel(name) {
   const base = "./models/" + name;
    modelViewer.src = base + ".gltf";  
 //    modelViewer.setAttribute("ios-src", base + ".usdz");
-    modelViewer.setAttribute("autoplay", true);
+   modelViewer.setAttribute("autoplay", true);
     modelViewer.iosSrc === base + ".usdz";
- console.log(modelViewer);
+ 
 
 }
 function exit() {
@@ -113,6 +109,23 @@ function exit() {
     .addEventListener("click", function () {
       backToPage5();
     });
+}
+function closePopUp(){
+  audioPause();
+  document.getElementById('popUpContainer').style.display = 'none';
+  if (forAudioID == "cut") document.getElementById("cut-audio").play();
+  if (forAudioID == "roast") document.getElementById("roast-audio").play();
+  if (forAudioID == "light") document.getElementById("light-audio").play();
+  if (forAudioID == "alcohol") document.getElementById("alcohol-audio").play();
+  if (forAudioID == "beverage") document.getElementById("beverage-audio").play();
+}
+function audioPause(){
+  audioTwo.pause();
+  cutAudio.pause();
+  roastAudio.pause();
+  lightAudio.pause();
+  alcoholAudio.pause();
+  beverageAudio.pause();
 }
 // function playAnimation(){
 //   if (Cigar.paused) {
