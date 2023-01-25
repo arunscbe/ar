@@ -138,6 +138,15 @@ function closePopUp(id){
   }
   
 }
+function playAudio(){
+    if (forAudioID == "cut") document.getElementById("cut-audio").play();
+    if (forAudioID == "smoke") document.getElementById("smoke-audio").play();
+    if (forAudioID == "roast") document.getElementById("roast-audio").play();
+    if (forAudioID == "light") document.getElementById("light-audio").play();
+    if (forAudioID == "alcohol") document.getElementById("alcohol-audio").play();
+    if (forAudioID == "beverage") document.getElementById("beverage-audio").play();
+}
+
 function audioPause(){
   audioTwo.pause();  
   cutAudio.pause();
