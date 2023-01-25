@@ -91,7 +91,16 @@ function backToPage5() {
   document.getElementById("page-5").style.display = "none";
 audioPause();
 }
-
+function buttonCheck(){
+  alert("sound...");
+  logEvent(analytics,'AR-Button Clicked');
+  if (forAudioID == "cut") document.getElementById("cut-audio").play();
+  if (forAudioID == "smoke") document.getElementById("smoke-audio").play();
+  if (forAudioID == "roast") document.getElementById("roast-audio").play();
+  if (forAudioID == "light") document.getElementById("light-audio").play();
+  if (forAudioID == "alcohol") document.getElementById("alcohol-audio").play();
+  if (forAudioID == "beverage") document.getElementById("beverage-audio").play();
+}
 function changeModel(name) { 
   const modelViewer = document.getElementById("Cigar");
   const base = "./models/" + name;
