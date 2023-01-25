@@ -3,7 +3,6 @@
  "smoke":{"name":"Smoke it by drawing air in gently but don't inhale (ever) Cigar smoke is about flavour"},
  "roast":{"name" : "Position them so that they are just on the brink of touching each other"},
  "light":{"name" : "Cigar needs to be rotated under the Lighter’s Flame for all its parts to get heated evenly"},
-  "food":{"name":"Sugar and spice chocolate"},
  "alcohol":{"name" : "A single Malt Especially a Highland single malt is the best partner for this cigar"},
  "beverage" : {"name" : "If coffee is your beverage of choice, espresso would be the ideal pairing"}
 }
