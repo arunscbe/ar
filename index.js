@@ -114,7 +114,7 @@ function exit() {
 function rockyPopWindow(){
   document.getElementById('rockyPopContainer').style.display = 'block';
 }
-function closePopUp(){
+function closePopUp(id){
   audioPause();
   document.getElementById('popUpContainer').style.display = 'none';
   document.getElementById('rockyPopContainer').style.display = 'none';
