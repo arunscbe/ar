@@ -92,7 +92,6 @@ function backToPage5() {
 audioPause();
 }
 function buttonCheck(){
-  alert("sound...");
   logEvent(analytics,'AR-Button Clicked');
   if (forAudioID == "cut") document.getElementById("cut-audio").play();
   if (forAudioID == "smoke") document.getElementById("smoke-audio").play();
@@ -121,6 +120,9 @@ function exit() {
 }
 function rockyPopWindow(){
   document.getElementById('rockyPopContainer').style.display = 'block';
+}
+function cigarAudio(){
+  document.getElementById("audio-2").play();
 }
 function closePopUp(id){
   audioPause();
