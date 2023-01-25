@@ -1,5 +1,6 @@
  let content = {
  "cut": {"name" : "Use a straight, two-finger guillotine cutter with curved blades"},
+ "smoke":{"name":"Smoke it by drawing air in gently but don't inhale (ever) Cigar smoke is about flavour"},
  "roast":{"name" : "Position them so that they are just on the brink of touching each other"},
  "light":{"name" : "Cigar needs to be rotated under the Lighter’s Flame for all its parts to get heated evenly"},
   "food":{"name":"Sugar and spice chocolate"},
@@ -10,6 +11,7 @@ let forAudioID;
 
   let audioTwo = document.getElementById("audio-2");
   let cutAudio = document.getElementById("cut-audio");
+  let smokeAudio = document.getElementById("smoke-audio");
   let roastAudio= document.getElementById("roast-audio");
   let lightAudio =  document.getElementById("light-audio");
   let alcoholAudio = document.getElementById("alcohol-audio");
@@ -91,10 +93,8 @@ function backToPage5() {
 audioPause();
 }
 
-function changeModel(name) {
- 
+function changeModel(name) { 
   const modelViewer = document.getElementById("Cigar");
-
   const base = "./models/" + name;
    modelViewer.src = base + ".gltf";  
 //    modelViewer.setAttribute("ios-src", base + ".usdz");
@@ -111,18 +111,29 @@ function exit() {
       backToPage5();
     });
 }
+function rockyPopWindow(){
+  document.getElementById('rockyPopContainer').style.display = 'block';
+}
 function closePopUp(){
   audioPause();
   document.getElementById('popUpContainer').style.display = 'none';
-  if (forAudioID == "cut") document.getElementById("cut-audio").play();
-  if (forAudioID == "roast") document.getElementById("roast-audio").play();
-  if (forAudioID == "light") document.getElementById("light-audio").play();
-  if (forAudioID == "alcohol") document.getElementById("alcohol-audio").play();
-  if (forAudioID == "beverage") document.getElementById("beverage-audio").play();
+  document.getElementById('rockyPopContainer').style.display = 'none';
+  if(id == "rockyPopBtn"){
+    secondId();
+  }else {   
+    if (forAudioID == "cut") document.getElementById("cut-audio").play();
+    if (forAudioID == "smoke") document.getElementById("smoke-audio").play();
+    if (forAudioID == "roast") document.getElementById("roast-audio").play();
+    if (forAudioID == "light") document.getElementById("light-audio").play();
+    if (forAudioID == "alcohol") document.getElementById("alcohol-audio").play();
+    if (forAudioID == "beverage") document.getElementById("beverage-audio").play();
+  }
+  
 }
 function audioPause(){
-  audioTwo.pause();
+  audioTwo.pause();  
   cutAudio.pause();
+  smokeAudio.pause();
   roastAudio.pause();
   lightAudio.pause();
   alcoholAudio.pause();
