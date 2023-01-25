@@ -33,8 +33,14 @@
         <h2 class="cigar-font-1 text-2xl border-solid border-b-4 cigar-border pb-3.5">
           To enter this site you must be 21 years old.
         </h2>
-        <img src="./assests/yearold21.png" alt="year old" onclick="secondId()" />
+        <img src="./assests/yearold21.png" alt="year old" onclick="rockyPopWindow()"/>
       </div>
+    </div>
+    <div class="rockyPop absolute bg-[#7b3c35] w-64 rounded-md mx-auto mt-[250px] content-center self-center border-2 border-[#a0635d] drop-shadow-lg hidden" id="rockyPopContainer">
+      <div class="w-56 mx-auto text-center py-4 px-4" id="rockyContentContainer">
+        <a class="cigar-main-font text-[#ffffff]" id="rockyContentDisplay">Rocky Patel Decade has a rating of 95 Points on cigar Aficionada</a>
+      </div>
+      <img class="w-28 mx-auto py-2" src="./assests/ok.png"  id="rockyPopBtn" onclick="closePopUp(this.id)"/>
     </div>
   </div>
 
