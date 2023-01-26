@@ -105,7 +105,6 @@ function changeModel(name) {
   const base = "./models/" + name;
    modelViewer.src = base + ".gltf";  
 //    modelViewer.setAttribute("ios-src", base + ".usdz");
-   modelViewer.setAttribute("autoplay", true);
     modelViewer.iosSrc === base + ".usdz";
  
 
@@ -141,6 +140,7 @@ function closePopUp(id){
   
 }
 function playAudio(){
+ console.log(forAudioID);
     if (forAudioID == "cut") document.getElementById("cut-audio").play();
     if (forAudioID == "smoke") document.getElementById("smoke-audio").play();
     if (forAudioID == "roast") document.getElementById("roast-audio").play();
